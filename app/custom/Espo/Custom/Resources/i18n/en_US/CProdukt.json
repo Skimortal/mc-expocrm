@@ -1,0 +1,13 @@
+{
+    "fields": {
+        "projekt": "Projekt",
+        "varianten": "Varianten"
+    },
+    "links": {
+        "projekt": "Projekt",
+        "varianten": "Varianten"
+    },
+    "labels": {
+        "Create CProdukt": "Create Produkt"
+    }
+}

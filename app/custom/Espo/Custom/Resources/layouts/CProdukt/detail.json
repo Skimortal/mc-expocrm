@@ -1,0 +1,29 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "projekt"
+                }
+            ],
+            [
+                {
+                    "name": "kategorie"
+                },
+                {
+                    "name": "assignedUser"
+                }
+            ],
+            [
+                {
+                    "name": "beschreibung",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

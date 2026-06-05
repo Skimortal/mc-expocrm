@@ -1,0 +1,15 @@
+{
+    "fields": {
+        "hersteller": "Hersteller",
+        "produkte": "Produkte",
+        "ausschreibungen": "Ausschreibungen"
+    },
+    "links": {
+        "hersteller": "Hersteller",
+        "produkte": "Produkte",
+        "ausschreibungen": "Ausschreibungen"
+    },
+    "labels": {
+        "Create CProjekt": "Create Projekt"
+    }
+}

@@ -1,0 +1,16 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "relationshipPanels": {
+        "projekt": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "varianten": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        }
+    }
+}

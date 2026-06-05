@@ -1,0 +1,24 @@
+[
+    {
+        "name": "name",
+        "link": true
+    },
+    {
+        "name": "account"
+    },
+    {
+        "name": "cProjekt"
+    },
+    {
+        "name": "stage"
+    },
+    {
+        "name": "cLand"
+    },
+    {
+        "name": "closeDate"
+    },
+    {
+        "name": "amount"
+    }
+]

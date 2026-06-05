@@ -1,0 +1,15 @@
+{
+    "fields": {
+        "preisCurrency": " (Currency)",
+        "preisConverted": " (Converted)",
+        "ausschreibung": "Ausschreibung",
+        "variante": "Variante"
+    },
+    "links": {
+        "ausschreibung": "Ausschreibung",
+        "variante": "Variante"
+    },
+    "labels": {
+        "Create CAusschreibungsposition": "Create Position"
+    }
+}

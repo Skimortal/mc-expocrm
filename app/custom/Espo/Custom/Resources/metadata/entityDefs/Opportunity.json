@@ -1,0 +1,95 @@
+{
+    "fields": {
+        "amount": {
+            "required": false
+        },
+        "closeDate": {
+            "required": false
+        },
+        "cLand": {
+            "type": "enum",
+            "options": [
+                "DE",
+                "AT",
+                "CH",
+                "IT",
+                "SI",
+                "HU",
+                "Sonstige"
+            ],
+            "maxLength": 100,
+            "isCustom": true
+        },
+        "cKanal": {
+            "type": "enum",
+            "options": [
+                "Ariba",
+                "Excel",
+                "E-Mail",
+                "Portal",
+                "Sonstige"
+            ],
+            "maxLength": 100,
+            "isCustom": true
+        },
+        "cIncoterm": {
+            "type": "enum",
+            "options": [
+                "EXW",
+                "FCA",
+                "FOB",
+                "CFR",
+                "CIF",
+                "DAP",
+                "DPU",
+                "DDP",
+                "Sonstige"
+            ],
+            "maxLength": 100,
+            "isCustom": true
+        },
+        "cProjekt": {
+            "type": "link"
+        },
+        "stage": {
+            "options": [
+                "Lead",
+                "Erstkontakt",
+                "Muster versendet",
+                "Ausschreibung eingereicht",
+                "Zuschlag",
+                "Verloren"
+            ],
+            "default": "Lead",
+            "probabilityMap": {
+                "Lead": 10,
+                "Erstkontakt": 25,
+                "Muster versendet": 45,
+                "Ausschreibung eingereicht": 70,
+                "Zuschlag": 100,
+                "Verloren": 0
+            },
+            "style": {
+                "Ausschreibung eingereicht": "primary",
+                "Zuschlag": "success",
+                "Verloren": "info"
+            }
+        }
+    },
+    "links": {
+        "cProjekt": {
+            "type": "belongsTo",
+            "foreign": "ausschreibungen",
+            "entity": "CProjekt",
+            "audited": false,
+            "isCustom": true
+        },
+        "cPositionen": {
+            "type": "hasMany",
+            "foreign": "ausschreibung",
+            "entity": "CAusschreibungsposition",
+            "audited": false,
+            "isCustom": true
+        }
+    }
+}

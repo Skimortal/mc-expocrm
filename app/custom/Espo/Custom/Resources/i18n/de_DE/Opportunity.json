@@ -1,0 +1,28 @@
+{
+    "fields": {
+        "cLand": "Land",
+        "cKanal": "Kanal",
+        "cIncoterm": "Incoterm",
+        "cProjekt": "Projekt",
+        "account": "Abnehmer",
+        "closeDate": "Frist",
+        "amount": "Wert",
+        "stage": "Phase",
+        "leadSource": "Quelle"
+    },
+    "links": {
+        "cProjekt": "Projekt",
+        "cPositionen": "Positionen",
+        "account": "Abnehmer"
+    },
+    "options": {
+        "stage": {
+            "Lead": "Lead",
+            "Erstkontakt": "Erstkontakt",
+            "Muster versendet": "Muster versendet",
+            "Ausschreibung eingereicht": "Ausschreibung eingereicht",
+            "Zuschlag": "Zuschlag/Listung",
+            "Verloren": "Verloren"
+        }
+    }
+}

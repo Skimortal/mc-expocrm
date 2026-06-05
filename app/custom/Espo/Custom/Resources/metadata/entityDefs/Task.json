@@ -1,0 +1,19 @@
+{
+    "fields": {
+        "cArt": {
+            "type": "enum",
+            "options": [
+                "Allgemein",
+                "Muster versenden",
+                "Frist",
+                "ASN senden",
+                "Etikett Manhattan",
+                "Logistik",
+                "Labor"
+            ],
+            "default": "Allgemein",
+            "maxLength": 100,
+            "isCustom": true
+        }
+    }
+}

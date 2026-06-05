@@ -1,0 +1,12 @@
+{
+    "relationshipPanels": {
+        "projekt": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "positionen": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        }
+    }
+}

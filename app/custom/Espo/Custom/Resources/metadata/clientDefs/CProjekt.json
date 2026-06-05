@@ -1,0 +1,20 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "relationshipPanels": {
+        "hersteller": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "produkte": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "ausschreibungen": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        }
+    }
+}

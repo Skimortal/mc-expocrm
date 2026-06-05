@@ -1,0 +1,44 @@
+{
+    "fields": {
+        "cAccountRole": {
+            "type": "multiEnum",
+            "storeArrayValues": true,
+            "options": [
+                "Hersteller",
+                "EU-Vertretung",
+                "Handelskette",
+                "Labor",
+                "Recycling",
+                "Spedition",
+                "Sonstige"
+            ],
+            "isCustom": true
+        },
+        "cVertretenDurch": {
+            "type": "link"
+        }
+    },
+    "links": {
+        "cVertretenDurch": {
+            "type": "belongsTo",
+            "foreign": "cVertrittFirmen",
+            "entity": "Account",
+            "audited": false,
+            "isCustom": true
+        },
+        "cVertrittFirmen": {
+            "type": "hasMany",
+            "foreign": "cVertretenDurch",
+            "entity": "Account",
+            "audited": false,
+            "isCustom": true
+        },
+        "cProjekte": {
+            "type": "hasMany",
+            "foreign": "hersteller",
+            "entity": "CProjekt",
+            "audited": false,
+            "isCustom": true
+        }
+    }
+}

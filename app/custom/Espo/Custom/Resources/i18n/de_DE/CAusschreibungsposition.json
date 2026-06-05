@@ -1,0 +1,16 @@
+{
+    "fields": {
+        "menge": "Menge",
+        "einheit": "Einheit",
+        "preis": "Preis",
+        "ausschreibung": "Ausschreibung",
+        "variante": "Variante"
+    },
+    "links": {
+        "ausschreibung": "Ausschreibung",
+        "variante": "Variante"
+    },
+    "labels": {
+        "Create CAusschreibungsposition": "Position erstellen"
+    }
+}

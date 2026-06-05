@@ -1,0 +1,17 @@
+{
+    "fields": {
+        "cFunktion": {
+            "type": "enum",
+            "options": [
+                "Geschäftsführung",
+                "Einkauf",
+                "Labor/Qualität",
+                "Logistik",
+                "Buchhaltung",
+                "Sonstige"
+            ],
+            "maxLength": 100,
+            "isCustom": true
+        }
+    }
+}

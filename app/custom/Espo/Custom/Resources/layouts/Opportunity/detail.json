@@ -1,0 +1,53 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "cProjekt"
+                }
+            ],
+            [
+                {
+                    "name": "account"
+                },
+                {
+                    "name": "cLand"
+                }
+            ],
+            [
+                {
+                    "name": "stage"
+                },
+                {
+                    "name": "cKanal"
+                }
+            ],
+            [
+                {
+                    "name": "closeDate"
+                },
+                {
+                    "name": "cIncoterm"
+                }
+            ],
+            [
+                {
+                    "name": "amount"
+                },
+                {
+                    "name": "assignedUser"
+                }
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

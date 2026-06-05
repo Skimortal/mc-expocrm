@@ -1,0 +1,35 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "hersteller"
+                }
+            ],
+            [
+                {
+                    "name": "kategorie"
+                },
+                {
+                    "name": "status"
+                }
+            ],
+            [
+                {
+                    "name": "assignedUser"
+                },
+                false
+            ],
+            [
+                {
+                    "name": "beschreibung",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

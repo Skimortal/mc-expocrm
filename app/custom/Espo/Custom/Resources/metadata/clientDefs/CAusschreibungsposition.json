@@ -1,0 +1,16 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "relationshipPanels": {
+        "ausschreibung": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "variante": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        }
+    }
+}

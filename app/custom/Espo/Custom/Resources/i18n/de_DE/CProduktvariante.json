@@ -1,0 +1,17 @@
+{
+    "fields": {
+        "gebinde": "Gebinde",
+        "ean": "EAN",
+        "artikelnummer": "Artikelnummer",
+        "nettogewicht": "Nettogewicht",
+        "produkt": "Produkt",
+        "positionen": "Positionen"
+    },
+    "links": {
+        "produkt": "Produkt",
+        "positionen": "Positionen"
+    },
+    "labels": {
+        "Create CProduktvariante": "Variante erstellen"
+    }
+}

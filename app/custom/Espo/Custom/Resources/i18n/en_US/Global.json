@@ -1,0 +1,14 @@
+{
+    "scopeNames": {
+        "CProjekt": "Projekt",
+        "CProdukt": "Produkt",
+        "CProduktvariante": "Variante",
+        "CAusschreibungsposition": "Position"
+    },
+    "scopeNamesPlural": {
+        "CProjekt": "Projekte",
+        "CProdukt": "Produkte",
+        "CProduktvariante": "Varianten",
+        "CAusschreibungsposition": "Positionen"
+    }
+}

@@ -1,0 +1,63 @@
+[
+    {
+        "label": "Overview",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "website"
+                }
+            ],
+            [
+                {
+                    "name": "emailAddress"
+                },
+                {
+                    "name": "phoneNumber"
+                }
+            ],
+            [
+                {
+                    "name": "billingAddress"
+                },
+                {
+                    "name": "shippingAddress"
+                }
+            ]
+        ]
+    },
+    {
+        "label": "Details",
+        "rows": [
+            [
+                {
+                    "name": "type"
+                },
+                {
+                    "name": "industry"
+                }
+            ],
+            [
+                {
+                    "name": "description",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    },
+    {
+        "label": "MOST Connect",
+        "rows": [
+            [
+                {
+                    "name": "cAccountRole"
+                },
+                {
+                    "name": "cVertretenDurch"
+                }
+            ]
+        ]
+    }
+]

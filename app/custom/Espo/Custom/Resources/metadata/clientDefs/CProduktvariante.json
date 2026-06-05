@@ -1,0 +1,16 @@
+{
+    "controller": "controllers/record",
+    "boolFilterList": [
+        "onlyMy"
+    ],
+    "relationshipPanels": {
+        "produkt": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "positionen": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        }
+    }
+}

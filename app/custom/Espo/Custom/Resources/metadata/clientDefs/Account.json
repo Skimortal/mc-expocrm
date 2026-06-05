@@ -1,0 +1,16 @@
+{
+    "relationshipPanels": {
+        "vertretenDurch": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "vertrittFirmen": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        },
+        "projekte": {
+            "layout": null,
+            "selectPrimaryFilterName": null
+        }
+    }
+}

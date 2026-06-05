@@ -1,0 +1,31 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "produkt"
+                }
+            ],
+            [
+                {
+                    "name": "gebinde"
+                },
+                {
+                    "name": "ean"
+                }
+            ],
+            [
+                {
+                    "name": "artikelnummer"
+                },
+                {
+                    "name": "nettogewicht"
+                }
+            ]
+        ]
+    }
+]

@@ -1,0 +1,13 @@
+{
+    "fields": {
+        "produkt": "Produkt",
+        "positionen": "Positionen"
+    },
+    "links": {
+        "produkt": "Produkt",
+        "positionen": "Positionen"
+    },
+    "labels": {
+        "Create CProduktvariante": "Create Variante"
+    }
+}

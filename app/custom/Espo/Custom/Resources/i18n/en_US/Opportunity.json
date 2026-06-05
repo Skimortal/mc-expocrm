@@ -1,0 +1,10 @@
+{
+    "fields": {
+        "cProjekt": "Projekt",
+        "cPositionen": "Positionen"
+    },
+    "links": {
+        "cProjekt": "Projekt",
+        "cPositionen": "Positionen"
+    }
+}

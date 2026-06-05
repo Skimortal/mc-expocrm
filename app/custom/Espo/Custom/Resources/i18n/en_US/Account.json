@@ -1,0 +1,12 @@
+{
+    "fields": {
+        "cVertretenDurch": "Vertreten durch",
+        "cVertrittFirmen": "Vertritt Firmen",
+        "cProjekte": "Projekte"
+    },
+    "links": {
+        "cVertretenDurch": "Vertreten durch",
+        "cVertrittFirmen": "Vertritt Firmen",
+        "cProjekte": "Projekte"
+    }
+}
