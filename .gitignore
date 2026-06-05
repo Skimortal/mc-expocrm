@@ -1,0 +1,17 @@
+# Secrets / lokale Env (echte .env NIE committen — nur .env.tmp ist versioniert)
+**/.env
+*.key
+*.pem
+*.crt
+
+# Logs / Temp
+*.log
+.DS_Store
+*~
+*.swp
+*.bak
+
+# IDE / Tooling
+.idea/
+.vscode/
+.claude

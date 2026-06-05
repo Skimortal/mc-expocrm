@@ -1,0 +1,79 @@
+name: mc_expocrm_dev
+
+# Lokaler Entwicklungs-Stack. Erreichbar unter http://localhost:8080
+# Eigene Volumes (getrennt von prod), eigenes Standard-Netz (kein webnet).
+
+services:
+  espocrm:
+    image: espocrm/espocrm:${ESPOCRM_VERSION:-latest}
+    container_name: mc_expocrm_dev
+    ports:
+      - "${HTTP_PORT:-8080}:80"
+    environment:
+      ESPOCRM_DATABASE_PLATFORM: Mysql
+      ESPOCRM_DATABASE_HOST: db
+      ESPOCRM_DATABASE_NAME: ${MYSQL_DATABASE}
+      ESPOCRM_DATABASE_USER: ${MYSQL_USER}
+      ESPOCRM_DATABASE_PASSWORD: ${MYSQL_PASSWORD}
+      ESPOCRM_ADMIN_USERNAME: ${ESPOCRM_ADMIN_USERNAME}
+      ESPOCRM_ADMIN_PASSWORD: ${ESPOCRM_ADMIN_PASSWORD}
+      ESPOCRM_SITE_URL: ${ESPOCRM_SITE_URL:-http://localhost:8080}
+    volumes:
+      - espocrm_app:/var/www/html
+      # Dieselben versionierten Anpassungen wie in prod — lokal bearbeiten, dann committen.
+      - ../app/custom/Espo/Custom:/var/www/html/custom/Espo/Custom
+      - ../app/client/custom:/var/www/html/client/custom
+    depends_on:
+      db:
+        condition: service_healthy
+    restart: unless-stopped
+    # Healthy erst, wenn Installation fertig + Apache liefert aus.
+    # Verhindert, dass der daemon-Container parallel installiert (Race).
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost/ -o /dev/null || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 40s
+
+  daemon:
+    image: espocrm/espocrm:${ESPOCRM_VERSION:-latest}
+    container_name: mc_expocrm_dev_daemon
+    environment:
+      ESPOCRM_DATABASE_PLATFORM: Mysql
+      ESPOCRM_DATABASE_HOST: db
+      ESPOCRM_DATABASE_NAME: ${MYSQL_DATABASE}
+      ESPOCRM_DATABASE_USER: ${MYSQL_USER}
+      ESPOCRM_DATABASE_PASSWORD: ${MYSQL_PASSWORD}
+      ESPOCRM_SITE_URL: ${ESPOCRM_SITE_URL:-http://localhost:8080}
+    volumes:
+      - espocrm_app:/var/www/html
+      - ../app/custom/Espo/Custom:/var/www/html/custom/Espo/Custom
+      - ../app/client/custom:/var/www/html/client/custom
+    command: docker-daemon.sh
+    depends_on:
+      espocrm:
+        condition: service_healthy
+    restart: unless-stopped
+
+  db:
+    image: mysql:8.0
+    container_name: mc_expocrm_dev_db
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - espocrm_db:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -u root -p$$MYSQL_ROOT_PASSWORD --silent"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    restart: unless-stopped
+
+volumes:
+  espocrm_app:
+  espocrm_db:
