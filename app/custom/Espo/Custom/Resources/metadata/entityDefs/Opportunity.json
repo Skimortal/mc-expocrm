@@ -6,20 +6,6 @@
         "closeDate": {
             "required": false
         },
-        "cLand": {
-            "type": "enum",
-            "options": [
-                "DE",
-                "AT",
-                "CH",
-                "IT",
-                "SI",
-                "HU",
-                "Sonstige"
-            ],
-            "maxLength": 100,
-            "isCustom": true
-        },
         "cKanal": {
             "type": "enum",
             "options": [
@@ -74,6 +60,31 @@
                 "Zuschlag": "success",
                 "Verloren": "info"
             }
+        },
+        "cLaender": {
+            "type": "multiEnum",
+            "storeArrayValues": true,
+            "options": [
+                "DE",
+                "AT",
+                "CH",
+                "IT",
+                "SI",
+                "HU",
+                "GB",
+                "IE"
+            ],
+            "isCustom": true
+        },
+        "cLaendergruppeGewonnen": {
+            "type": "multiEnum",
+            "storeArrayValues": true,
+            "options": [
+                "DE",
+                "Hofer-Länder",
+                "GB+IE"
+            ],
+            "isCustom": true
         }
     },
     "links": {

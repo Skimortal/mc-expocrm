@@ -3,12 +3,14 @@
         "CProjekt": "Projekt",
         "CProdukt": "Produkt",
         "CProduktvariante": "Variante",
-        "CAusschreibungsposition": "Position"
+        "CAusschreibungsposition": "Position",
+        "CSteuerregistrierung": "Steuer-/Zollregistrierung"
     },
     "scopeNamesPlural": {
         "CProjekt": "Projekte",
         "CProdukt": "Produkte",
         "CProduktvariante": "Varianten",
-        "CAusschreibungsposition": "Positionen"
+        "CAusschreibungsposition": "Positionen",
+        "CSteuerregistrierung": "Steuer-/Zollregistrierungen"
     }
 }

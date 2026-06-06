@@ -13,12 +13,12 @@
         "name": "stage"
     },
     {
-        "name": "cLand"
+        "name": "cLaender"
+    },
+    {
+        "name": "cLaendergruppeGewonnen"
     },
     {
         "name": "closeDate"
-    },
-    {
-        "name": "amount"
     }
 ]

@@ -1,0 +1,11 @@
+{
+    "fields": {
+        "gruppe": "Gruppe",
+        "steuernummer": "Steuernummer",
+        "eori": "EORI-Nummer",
+        "abgedeckteLaender": "Abgedeckte Länder"
+    },
+    "labels": {
+        "Create CSteuerregistrierung": "Steuer-/Zollregistrierung erstellen"
+    }
+}

@@ -4,6 +4,7 @@
         "CProdukt": "Produkt",
         "CProduktvariante": "Variante",
         "CAusschreibungsposition": "Position",
+        "CSteuerregistrierung": "Steuer-/Zollregistrierung",
         "Opportunity": "Ausschreibung"
     },
     "scopeNamesPlural": {
@@ -11,6 +12,7 @@
         "CProdukt": "Produkte",
         "CProduktvariante": "Varianten",
         "CAusschreibungsposition": "Positionen",
+        "CSteuerregistrierung": "Steuer-/Zollregistrierungen",
         "Opportunity": "Ausschreibungen"
     }
 }

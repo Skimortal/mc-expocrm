@@ -1,0 +1,29 @@
+[
+    {
+        "label": "",
+        "rows": [
+            [
+                {
+                    "name": "name"
+                },
+                {
+                    "name": "gruppe"
+                }
+            ],
+            [
+                {
+                    "name": "steuernummer"
+                },
+                {
+                    "name": "eori"
+                }
+            ],
+            [
+                {
+                    "name": "abgedeckteLaender",
+                    "fullWidth": true
+                }
+            ]
+        ]
+    }
+]

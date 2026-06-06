@@ -1,8 +1,9 @@
 {
     "fields": {
-        "cLand": "Land",
         "cKanal": "Kanal",
         "cIncoterm": "Incoterm",
+        "cLaender": "Länder",
+        "cLaendergruppeGewonnen": "Ländergruppen (gewonnen)",
         "cProjekt": "Projekt",
         "account": "Abnehmer",
         "closeDate": "Frist",

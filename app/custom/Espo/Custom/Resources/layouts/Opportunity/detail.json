@@ -15,7 +15,7 @@
                     "name": "account"
                 },
                 {
-                    "name": "cLand"
+                    "name": "cLaender"
                 }
             ],
             [
@@ -23,12 +23,12 @@
                     "name": "stage"
                 },
                 {
-                    "name": "cKanal"
+                    "name": "cLaendergruppeGewonnen"
                 }
             ],
             [
                 {
-                    "name": "closeDate"
+                    "name": "cKanal"
                 },
                 {
                     "name": "cIncoterm"
@@ -36,11 +36,17 @@
             ],
             [
                 {
-                    "name": "amount"
+                    "name": "closeDate"
                 },
                 {
-                    "name": "assignedUser"
+                    "name": "amount"
                 }
+            ],
+            [
+                {
+                    "name": "assignedUser"
+                },
+                false
             ],
             [
                 {
